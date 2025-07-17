@@ -1,0 +1,11 @@
+db.registration.aggregate([
+      {
+          $match: {
+              createdAt: {
+                  $gte: ISODate('2025-05-26T00:00:00Z'),
+                  $lte: ISODate('2025-03-26T23:59:59Z')
+              }
+          }
+      }
+     
+   ]);

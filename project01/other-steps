@@ -1,0 +1,13 @@
+1- make sure that the new deployment jars is right and check it's size. 
+2- the new tomcat folder is exist and there is a pointer point to it
+3- the new hazelcast folder is exist and there is a pointer point to it
+4- check the configuration of tomcat and compare it with the old one it should be identical.
+5- hazelcast configuration should be identical with the old one unless the new updates
+6- everything in the deployment plan annotated with before deployment should be putted so we won't waste time in inserting records
+7- the old jars and wars must be backuped and the old hazelcast and tomcat version must be exists too before stopping the services as a rollback plan
+8- stopping the services must be in order.
+9- Verify that tomcat is actually stopped after stopping the service by ps aux | grep tomcat-service
+10- check the hazelcast configuration is updated along with service manger, adapter and storage service.
+11- copy the new jars in each jar folder and the wars in the new tomcat wepapps
+12- re run the services in the stopped reverse order.
+has context menu

@@ -1,0 +1,12 @@
+Start Services
+----------------
+----------------
+
+hazelcast
+Tomcat
+Service Adapter
+Service manager
+Storage service 
+push-notification
+httpd
+Watchdog

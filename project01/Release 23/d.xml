@@ -1,0 +1,6 @@
+2025-05-13 07:39:04.749 [3.25.0]  INFO [a8hZ9Ov3S1iRYY2JxFXgUw] [] 1932 --- [XNIO-1 task-2] com.wit.mpesa.g2lib.service.XmlSerializerService : XML Response
+
+2025-05-13 07:39:04.749 [3.25.0]  INFO [a8hZ9Ov3S1iRYY2JxFXgUw] [] 1932 --- [XNIO-1 task-2] c.w.m.g2gatewaycommon.handler.tz.common.SchemaErrorHandler : Generating Common Error Format object
+
+2025-05-13 07:39:04.749 [3.25.0]  INFO [a8hZ9Ov3S1iRYY2JxFXgUw] [] 1932 --- [XNIO-1 task-2] c.w.m.g2gatewaycommon.handler.tz.common.SchemaErrorHandler : Common Error response: CommonResultError(super=CommonResultFormat(super=QueueMessage(requestId=a8hZ9Ov3S1iRYY2JxFXgUw, serviceType=CONSUMER, addedToQueueAt=null), apiResource=ERROR, error=CommonErrorFormat{errorSource='TPE', httpCode='503', internalCode='3', message='Unknown error received on Third Party result', businessCode='503-3', additionalFieldsMap='{g2ErrorCode=6011, g2ErrorDescription=the current security credential of the user has expired.}'}, responseStatus=null, parameters=null), originalApiResource=QUERY_ORG_INFO)
+ 

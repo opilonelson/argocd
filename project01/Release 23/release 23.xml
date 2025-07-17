@@ -1,0 +1,12 @@
+<!-- vi /opt/hazelcast/latest/conf/hazelcast.xml -->
+
+<map name="INITIALIZATION_VECTOR_MAP">
+<backup-count>1</backup-count>
+<!-- A IV can only be re-used for a maximum of 10 minutes -->
+<time-to-live-seconds>600</time-to-live-seconds>
+<!-- If the IV is not used, then it expires after 10 minutes -->
+<max-idle-seconds>600</max-idle-seconds>
+<!-- Not used entries are evicted when Map is Full using LRU eviction policy -->
+<!-- Number of Map Entries Per Node -->
+<eviction eviction-policy="LRU" max-size-policy="PER_NODE" size="120000"/>
+</map>

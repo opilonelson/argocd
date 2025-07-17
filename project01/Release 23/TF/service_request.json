@@ -1,0 +1,23 @@
+{
+  "ServiceRequest": {
+    "Header": {
+      "RequestRefID": "121221s2s121212",
+      "Timestamp": "20130402152345",
+      "OperationName": "CustomerInformation",
+      "OperationVersion": "1",
+      "SourceSystem": "SFCAPP",
+      "Credentials": {
+        "UserName": "Spiderman",
+        "Password": "a515227d36f6a715a27e"
+      }
+    },
+    "Body": {
+      "data": [
+        {
+          "Name": "MSISDN",
+          "Value": "714074637"
+        }
+      ]
+    }
+  }
+}
