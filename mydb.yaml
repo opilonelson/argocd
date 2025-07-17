@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    role: db
+  name: mydb
+  namespace: argocd
+spec:
+  containers:
+  - env:
+    - name: MYSQL_ROOT_PASSWORD
+      value: demo.123
+    image: mysql
+    name: mydb
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
