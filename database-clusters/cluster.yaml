@@ -4,7 +4,7 @@ metadata:
   name: cluster03
   namespace: ideal
 spec:
-  instances: 2
+  instances: 4
   backup:
     barmanObjectStore:
       destinationPath: "s3://postdb04/"
