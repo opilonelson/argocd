@@ -1,0 +1,25 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: cluster03
+  namespace: ideal
+spec:
+  instances: 3
+  backup:
+    barmanObjectStore:
+      destinationPath: "s3://postdb04/"
+      endpointURL: "http://192.168.1.8:9000"
+      s3Credentials:
+        accessKeyId:
+          name: minio-creds03
+          key: ACCESS_KEY_ID
+        secretAccessKey:
+          name: minio-creds03
+          key: SECRET_ACCESS_KEY
+      wal:
+        compression: gzip
+        #encryption: AES256 # Optional, remove if MinIO doesn't use server-side encryption
+    retentionPolicy: "30d" # Keeps backups for 30 days
+
+  storage:
+    size: 1Gi
